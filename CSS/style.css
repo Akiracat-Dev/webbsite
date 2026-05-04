@@ -1,14 +1,4 @@
-body {
-
-  background-color: #ffe9ea;
-
-  font: 1em sans-serif;
-
-  padding: 0;
-
-  margin: 0;
-
-}
+/*框架用*/
 
 html {
 
@@ -16,16 +6,39 @@ html {
 
 }
 
+body {
+
+  padding: 0;
+  margin: 0;
+  background-color: #ffe9ea;
+  font: 1em sans-serif;
+  height: 100vh;
+  background: linear-gradient(125deg,#2c3e50,#27ae60,#2980b9,#e74c3c,#8e44ad);
+  background-size: 500%;
+  animation: bgAnimation 15s linear infinite;
+  -webkit-text-size-adjust: 100%;
+
+}
+
+
+@keyframes bgAnimation {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
 h1 {
   
   color: #222;
-  
   font-family: fantasy , "Source Sans Pro", sans-serif;
-  
   font-size: 4.5em;
-  
   letter-spacing: 5px;
-  
   font-weight: 700;
 
 }
@@ -33,9 +46,7 @@ h1 {
 p {
 
   font-size: 30px;
-
   font-family: Arial;
-
   color: #EB0E25;
 
 }
@@ -52,14 +63,13 @@ hr {
 
 }
 
+/*半透明底圖*/
+
 .bigp {
   
   height: 300px;
-  
   overflow: hidden;
-
   position: relative;
-
   text-align: center;
 
 }
@@ -67,7 +77,6 @@ hr {
 .bigp img {
 
   opacity: 0.5;
-  
   width: 100%;
   
 }
@@ -75,28 +84,23 @@ hr {
 .bigp h1 {
 
   position: absolute;
-
   top: 35%;
-
   left: 50%;
-
   transform: translate(-50%, -50%);
-
   color: aliceblue;
-
   text-shadow: 0 0 10px rgba(0,0,0,0.7);
 
 }
 
+/*首頁海報*/
+
 #poster {
 
-  width: 1000px;
-
-  height: auto;
-
-  display: block;
-
-  margin: 50px auto;
+  width:100%;
+  max-width:1000px;
+  height:auto;
+  display:block;
+  margin:50px auto;
 
 }
 
@@ -106,14 +110,13 @@ hr {
 
 }
 
+/*導覽*/
+
 .nav {
  
   width: 100%;
-
   display: flex;
-
   justify-content: flex-end;
-
   font-family:Arial, Helvetica, sans-serif
 
 }
@@ -121,13 +124,9 @@ hr {
 .box1 {
 
   background-color: rgba(158 ,147 ,255 , 0.5);
-
   width: 100%;
-
   padding: 20px;
-
   display: flex;
-
   justify-content: flex-end;
 
 
@@ -136,11 +135,8 @@ hr {
 ul {
 
   margin: 30px 30px;
-
   padding: 0;
-
   display: flex;
-
   list-style: none;
 
 }
@@ -148,9 +144,7 @@ ul {
 ul li {
 
   list-style: none;
-
   padding: 10px 20px;
-
   transition: .5s;
 
 }
@@ -158,15 +152,10 @@ ul li {
 ul li a {
 
   text-decoration: none;
-
   text-transform: uppercase;
-
   font-size: 2.5em;
-
   color: #21165e;
-
   position: relative;
-
   display: block;
 
 }
@@ -174,7 +163,6 @@ ul li a {
 ul:hover li {
 
   opacity: .2;
-
   filter: blur(2px);
 
 }
@@ -182,7 +170,6 @@ ul:hover li {
 ul li:hover {
 
   opacity: 1;
-
   filter: blur(0px);
 
 }
@@ -190,36 +177,28 @@ ul li:hover {
 ul li a::before {
 
   content: '';
-
   width: 10;
-
   height: 5px;
-
   background: #FAFF94;
-
   position: absolute;
-
   top: 100%;
-
   left: 0;
-
   transition: .5s;
 
 }
 
 ul li:hover a::before {
 
-
   width: 50%;
-
   transform: translateX(100%);
 
 }
 
+/*山椒魚*/
+
 .intro {
 
   text-align: center;
-
   color: black;
 
 }
@@ -227,19 +206,17 @@ ul li:hover a::before {
 .intro p {
 
   color: black;
-
   font-size: 20px;
 
 }
 
+/*廢棄按鈕*/
+
 .nav button {
 
   background: none;
-
   border: none;
-
   font-size: 40px;
-
   gap: 10px;
 
 }
@@ -247,7 +224,6 @@ ul li:hover a::before {
 button:hover {
 
   background-color: #EB0E25;
-
   cursor: pointer;
 
 }
@@ -258,32 +234,4 @@ button:active {
 
 }
 
-
-.frontpage {
-
-  
-
-}
-
-.online {
-
-  
-
-}
-
-.aboutus {
-
-  
-}
-
-.video {
-
-  
-
-}
-
-.info {
-
- 
-
-}
+/*關於我們用*/
