@@ -12,12 +12,12 @@ body {
   margin: 0;
   background-color: #ffe9ea;
   font: 1em sans-serif;
-  height: 100vh;
+  
   background: linear-gradient(125deg,#2c3e50,#27ae60,#2980b9,#e74c3c,#8e44ad);
   background-size: 500%;
   animation: bgAnimation 15s linear infinite;
   -webkit-text-size-adjust: 100%;
-
+  
 }
 
 
@@ -33,6 +33,7 @@ body {
     }
 }
 
+
 h1 {
   
   color: #222;
@@ -47,7 +48,8 @@ p {
 
   font-size: 30px;
   font-family: Arial;
-  color: #EB0E25;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 
 }
 
@@ -89,6 +91,7 @@ hr {
   transform: translate(-50%, -50%);
   color: aliceblue;
   text-shadow: 0 0 10px rgba(0,0,0,0.7);
+  overflow: hidden;
 
 }
 
@@ -200,6 +203,7 @@ ul li:hover a::before {
 
   text-align: center;
   color: black;
+  margin-bottom: 50px;
 
 }
 
@@ -228,10 +232,53 @@ button:hover {
 
 }
 
-
 button:active {
 
+  background-color: #EB0E25;
+  transform: scale(0.95);
 
 }
 
+
 /*關於我們用*/
+
+.story {
+
+  background-color: #ffe9ea;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+
+}
+
+/*照片堆*/
+
+.avatarborder {
+
+  width:100%;
+  max-width:1000px;
+  height:auto;
+  display:block;
+  margin:50px auto;
+
+}
+
+.avatar-frame{
+  
+  width: 200px;
+	border-radius: 50%;
+	aspect-ratio: 1 / 1;
+	background-color: #eee; /* 可以做為預設的顏色 */
+	background-image: url("images/IMG_1332.JPG");
+	background-size: cover;
+	background-position: center;
+	
+	/* 需要列印必須要加上 */
+	print-color-adjust: exact;
+    -webkit-print-color-adjust: exact; /* for Chrome, Edge, Opera */
+
+  float: left
+
+}
